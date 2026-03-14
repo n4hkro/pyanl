@@ -106,6 +106,7 @@ async def main() -> None:
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
     logger.info("Bot başladılır…")
+    await bot.delete_webhook()
     await dp.start_polling(bot)
 
 
