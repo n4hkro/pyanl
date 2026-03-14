@@ -47,7 +47,7 @@ BOT_TOKEN=your-telegram-bot-token-here
 
 ## İstifadə
 
-Botu başladın:
+Botu başladın (start the bot):
 
 ```bash
 # .env faylından tokeni yükləmək üçün

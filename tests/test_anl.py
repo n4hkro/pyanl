@@ -61,6 +61,10 @@ class TestParseAnlUrl:
         url = "http://web2.anl.az:81/read/page.php?bibid=abc"
         assert parse_anl_url(url) is None
 
+    def test_malformed_url(self):
+        assert parse_anl_url("not-a-url") is None
+        assert parse_anl_url("") is None
+
 
 # ---------------------------------------------------------------------------
 # get_total_pages (mocked HTTP)

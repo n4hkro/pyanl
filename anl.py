@@ -31,7 +31,7 @@ def parse_anl_url(url: str) -> str | None:
     """
     parsed = urlparse(url)
 
-    if "anl.az" not in parsed.hostname:
+    if not parsed.hostname or "anl.az" not in parsed.hostname:
         return None
 
     if "/read/page.php" not in parsed.path:
