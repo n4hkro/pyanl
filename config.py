@@ -1,6 +1,6 @@
 import os
 
-BOT_TOKEN: str = os.environ["BOT_TOKEN"]
+BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "")
 
 ANL_BASE_URL: str = "http://web2.anl.az:81/read"
 ANL_PAGE_URL: str = f"{ANL_BASE_URL}/page.php"

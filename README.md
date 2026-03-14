@@ -66,7 +66,7 @@ Bot kitabın bütün səhifələrini yükləyəcək və sizə PDF faylı göndə
 ## Testlər
 
 ```bash
-BOT_TOKEN=test python -m pytest tests/ -v
+python -m pytest tests/ -v
 ```
 
 ## Layihə Strukturu
